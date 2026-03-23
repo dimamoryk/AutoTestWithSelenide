@@ -18,7 +18,7 @@ public class ClickArticleTitleBlock_Test {
 
     @Test
     public void clickDayNewsTitle() {
-        //articlePage.open(ArticleData.ARTICLE_DATA.getPath());
+        articlePage.open(ArticleData.ARTICLE_DATA.getPath());
         mainPage.open();
         String title = mainPage.getDayNewsItemTitleByIndex(-1);
         mainPage.clickDayNewsItemByTitle(title);
